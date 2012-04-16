@@ -18,6 +18,8 @@ module FriendlyId
     # The module to use for finders
     attr_accessor :finder_methods
 
+    attr_accessor :options
+
     def initialize(model_class, values = nil)
       @model_class    = model_class
       @defaults       = {}
